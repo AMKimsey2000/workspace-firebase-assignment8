@@ -1,12 +1,12 @@
-var firebaseConfig = {
-  apiKey: "AIzaSyDjdVP2wSWz91dPgET3KIf4XbdxPB_2l1w",
-  authDomain: "javascriptdemo-237db.firebaseapp.com",
-  databaseURL: "https://javascriptdemo-237db.firebaseio.com",
-  projectId: "javascriptdemo-237db",
-  storageBucket: "javascriptdemo-237db.appspot.com",
-  messagingSenderId: "397768045903",
-  appId: "1:397768045903:web:64fc692aef3653b407013a",
-  measurementId: "G-9W77ZD235X"
+const firebaseConfig = {
+  apiKey: "AIzaSyA36sUzMsdEYel8St87dZDh10vLbyLc_Ow",
+  authDomain: "fire-assign7.firebaseapp.com",
+  databaseURL: "https://fire-assign7.firebaseio.com",
+  projectId: "fire-assign7",
+  storageBucket: "fire-assign7.appspot.com",
+  messagingSenderId: "300042996526",
+  appId: "1:300042996526:web:02cac17a21ed2e7507c8bf",
+  measurementId: "G-QSQ8750499"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -22,18 +22,9 @@ $("input[type='button']").click(function(e) {
     console.log(name + " " + value);
     inputJson[name] = value;
   }
+console.log(inputJson);
+firebase.firestore().collection("hotel-data").add(inputJson);
 
-  console.log(inputJson);
-  //var night = parseInt(inputJson["num"]);
-  // var cost = parseInt(inputJson["room"].slice(-3));
-  // console.log("The cost for this reservation is " + night * cost);
-
-  /* save the data to database 
-  firebase
-    .firestore()
-    .collection("hotelreservation")
-    .add(inputJson);
-*/
 
   /* clear the entry */
   $("form")[0].reset();
