@@ -1,12 +1,12 @@
-const firebaseConfig = {
-  apiKey: "AIzaSyA36sUzMsdEYel8St87dZDh10vLbyLc_Ow",
-  authDomain: "fire-assign7.firebaseapp.com",
-  databaseURL: "https://fire-assign7.firebaseio.com",
-  projectId: "fire-assign7",
-  storageBucket: "fire-assign7.appspot.com",
-  messagingSenderId: "300042996526",
-  appId: "1:300042996526:web:02cac17a21ed2e7507c8bf",
-  measurementId: "G-QSQ8750499"
+var firebaseConfig = {
+    apiKey: "AIzaSyA49jhFYfw-wv116rAMmqWrWTE9ecp6UW4",
+    authDomain: "fire-assignment8.firebaseapp.com",
+    databaseURL: "https://fire-assignment8.firebaseio.com",
+    projectId: "fire-assignment8",
+    storageBucket: "fire-assignment8.appspot.com",
+    messagingSenderId: "1094407611598",
+    appId: "1:1094407611598:web:5a19d9d37d07f50d67dc9f",
+    measurementId: "G-XZZ8HV9T3M"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
