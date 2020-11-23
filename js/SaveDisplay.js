@@ -22,7 +22,7 @@ $(".sampleSurvey input[type = 'submit']").click(function(obj) {
     json[data[index]["name"]] = data[index]["value"]
   });
   firebase.firestore().collection("survey-data").add(json);
-  console.log(json)
+  console.log("Successfully saved survey data to database");
 });
 // update the result in table
 firebase.firestore().collection("survey-data").onSnapshot(function(snap) {
@@ -31,7 +31,7 @@ firebase.firestore().collection("survey-data").onSnapshot(function(snap) {
       $(this).text("0");
     }
   });
-  console.log(snap.size);
+  console.log("Successfully pulled " + snap.size + " items from database");
   snap.forEach(document => {
     var obj = $("td#ans" + (String(document.data().choice).charCodeAt(0) - 64));
     obj.text(parseInt(obj.text()) + 1);
