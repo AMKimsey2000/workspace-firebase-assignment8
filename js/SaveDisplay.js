@@ -14,8 +14,8 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 // save the data
-$(".sampleSurvey input[type = 'submit']").click(function(obj) {
-  obj.preventDefault();
+$(".sampleSurvey input[type = 'submit']").click(function(page) {
+  page.preventDefault();
   var data = $(".sampleSurvey").serializeArray();
   var json = {};
   data.forEach(function(_, index) {

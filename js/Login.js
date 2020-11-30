@@ -19,6 +19,6 @@ $("#loginForm").submit(page => {
       $("input[type = 'submit'").val("Submit");
     }, 2500);
   }).catch(err => {
-    console.log("An error occurred\nError code: " + String(err.code) + "\nMessage: " + String(err.message));
+    alert(err.message);
   })
 })

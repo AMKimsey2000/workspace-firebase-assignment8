@@ -10,8 +10,8 @@ var firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 
-$("#signup-form").submit(function(obj) {
-  obj.preventDefault();
+$("#signup-form").submit(function(page) {
+  page.preventDefault();
   if (!($("input[name = 'cpassword']").val() == $("input[name = 'password']").val())) {
     alert("Passwords do not match");
     return;
@@ -23,6 +23,6 @@ $("#signup-form").submit(function(obj) {
       $("input[type = 'submit']").val("Create your acoount");
     }, 2500);
   }).catch(error => {
-    alert(error);
+    alert(error.message);
   });
 });
