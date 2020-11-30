@@ -8,9 +8,9 @@
   <body>
     <div class="message">
       <h1>Please Login in Aiken Connect</h1>
-      <form id="Login">
+      <form id="loginForm">
         <p>
-          <label for="login">Login Name:</label>
+          <label for="login">E-mail:</label>
           <input type="text" id="login" name="login" placeholder="anonymous" />
         </p>
         <p>
@@ -23,5 +23,10 @@
         </p>
       </form>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+	  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <script src = "js/Login.js"></script>
   </body>
 </html>

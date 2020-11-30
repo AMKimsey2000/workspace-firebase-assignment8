@@ -16,7 +16,7 @@ $("#signup-form").submit(function(obj) {
     alert("Passwords do not match");
     return;
   }
-  firebase.auth().createUserWithEmailAndPassword($("input[name = 'username']").val(), $("input[name = 'cpassword']").val()).then(user => {
+  firebase.auth().createUserWithEmailAndPassword($("input[name = 'username']").val(), $("input[name = 'cpassword']").val()).then(_ => {
     $("input[type = 'submit']").val("Success");
     $("#signup-form")[0].reset();
     setTimeout(function() {
